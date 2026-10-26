@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diky Firerza | Portfolio 2026</title>
+    <meta name="description" content="Personal Portfolio Diky Firerza - Mahasiswa Sistem Informasi Universitas Tanjungpura">
+    
+    <!-- Favicon sederhana berbasis SVG -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='25' fill='%23080b12'/><text x='50%' y='62%' font-size='42' font-family='sans-serif' font-weight='900' fill='%2338bdf8' text-anchor='middle'>DF</text></svg>">
+
+    <!-- Google Fonts: Bebas Neue (Heading) & Montserrat (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- File Stylesheet Utama -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dekoras Glow Background -->
+    <div class="ambient-glow glow-top-left" aria-hidden="true"></div>
+    <div class="ambient-glow glow-top-right" aria-hidden="true"></div>
+    <div class="ambient-glow glow-center" aria-hidden="true"></div>
+
+    <!-- NAVBAR PILL DI TENGAH ATAS -->
+    <header class="header">
+        <div class="navbar-wrapper">
+            <!-- Logo Inisial DF di pojok kiri -->
+            <a href="#hero" class="brand-logo" aria-label="Beranda Diky Firerza">
+                <span class="logo-box">DF</span>
+                <span class="logo-text">DIKY FIRERZA</span>
+            </a>
+
+            <!-- Menu Navigasi Berbentuk Pill di Tengah -->
+            <nav class="nav-pill" id="navMenu">
+                <a href="#hero" class="nav-item active" data-section="hero">PROFIL</a>
+                <a href="#projects" class="nav-item" data-section="projects">PROJECT</a>
+                <a href="#contact" class="nav-item" data-section="contact">CONTACT PERSON</a>
+            </nav>
+
+            <!-- Tombol Hamburger Menu untuk Tampilan HP -->
+            <button class="hamburger-btn" id="hamburgerBtn" aria-label="Buka Menu Navigasi" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Menu Dropdown Mobile -->
+        <div class="mobile-nav-drawer" id="mobileDrawer">
+            <a href="#hero" class="mobile-nav-item">PROFIL</a>
+            <a href="#about" class="mobile-nav-item">TENTANG SAYA</a>
+            <a href="#experience" class="mobile-nav-item">PENGALAMAN</a>
+            <a href="#projects" class="mobile-nav-item">PROJECT</a>
+            <a href="#contact" class="mobile-nav-item">CONTACT PERSON</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECTION 1: INTRO / HERO -->
+        <section class="section hero-section" id="hero">
+            <div class="container hero-container">
+                
+                <!-- Foto Profil Setengah Lingkaran dengan Aksen Merah & Glow Biru -->
+                <div class="hero-image-col">
+                    <div class="hero-avatar-frame">
+                        <div class="glow-backdrop"></div>
+                        <div class="avatar-ring-accent"></div>
+                        
+                        <!-- CATATAN: Ganti foto profil Anda di: assets/img/profile.jpg -->
+                        <img src="foto1.jpeg" alt="Foto Profil Diky Firerza" class="hero-avatar-img">
+                        
+                        <div class="hero-floating-badge">
+                            <i class="fa-solid fa-code"></i>
+                            <span>WEB DEV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Teks & Tombol Game Menu -->
+                <div class="hero-text-col">
+                    <span class="hero-nim-badge">
+                        <i class="fa-solid fa-id-card"></i> NIM H1101261071
+                    </span>
+
+                    <h1 class="hero-big-title">PORTFOLIO <span class="text-glow-cyan">2026</span></h1>
+                    <h2 class="hero-name">DIKY FIRERZA</h2>
+
+                    <p class="hero-tagline">
+                        Mahasiswa Sistem Informasi | Universitas Tanjungpura | Antusias Web Programming
+                    </p>
+
+                    <!-- Tombol Menu Bergaya Game (START / OPTIONS / EXIT) -->
+                    <div class="game-menu-container">
+                        <div class="game-menu-header">
+                            <i class="fa-solid fa-gamepad"></i> QUICK NAVIGATION MENU
+                        </div>
+                        <div class="game-menu-buttons">
+                            <a href="#about" class="game-btn start-btn">
+                                <span class="game-btn-icon"><i class="fa-solid fa-play"></i></span>
+                                <span class="game-btn-text">START</span>
+                                <span class="game-btn-sub">Tentang Saya</span>
+                            </a>
+                            <a href="#projects" class="game-btn options-btn">
+                                <span class="game-btn-icon"><i class="fa-solid fa-sliders"></i></span>
+                                <span class="game-btn-text">OPTIONS</span>
+                                <span class="game-btn-sub">Lihat Proyek</span>
+                            </a>
+                            <a href="#contact" class="game-btn exit-btn">
+                                <span class="game-btn-icon"><i class="fa-solid fa-phone"></i></span>
+                                <span class="game-btn-text">EXIT</span>
+                                <span class="game-btn-sub">Kontak Person</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action -->
+                    <div class="hero-cta-wrapper">
+                        <a href="#contact" class="btn-primary-glow">
+                            <i class="fa-solid fa-paper-plane"></i> Hubungi Saya
+                        </a>
+                        <a href="https://github.com/dikyfirerza-byte" target="_blank" rel="noopener noreferrer" class="btn-outline-glow">
+                            <i class="fa-brands fa-github"></i> Kunjungi GitHub
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: TENTANG SAYA -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <h2 class="section-title">ABOUT ME</h2>
+                    <div class="section-title-bar"></div>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Foto Kiri -->
+                    <div class="about-image-col">
+                        <div class="about-card-photo">
+                            <div class="about-photo-wrapper">
+                                <!-- CATATAN: Ganti foto di: assets/img/profile.jpg -->
+                                <img src="foto2.jpeg" alt="Diky Firerza" class="about-img">
+                            </div>
+                            <div class="about-photo-info">
+                                <h3>Diky Firerza</h3>
+                                <p>Sistem Informasi - Universitas Tanjungpura</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Teks Deskripsi Persis Sesuai Permintaan -->
+                    <div class="about-content-col">
+                        <p class="about-desc">
+                            Saya merupakan mahasiswa Program Studi Sistem Informasi di Universitas Tanjungpura yang memiliki antusiasme tinggi dalam mempelajari web programming. Saya tertarik untuk memahami bagaimana sebuah website dirancang, dikembangkan, dan dioptimalkan agar dapat memberikan pengalaman yang baik bagi penggunanya. Saya senang mempelajari hal-hal baru, mengembangkan kemampuan dalam pemrograman, serta mencoba menerapkan ide-ide kreatif menjadi sebuah karya digital. Dengan semangat belajar dan kemauan untuk terus berkembang, saya berharap dapat meningkatkan keterampilan di bidang web development, memperluas wawasan teknologi, dan menciptakan solusi digital yang bermanfaat bagi masyarakat.
+                        </p>
+
+                        <!-- Hobi Chips -->
+                        <div class="hobby-block">
+                            <h4 class="block-subtitle"><i class="fa-solid fa-heart"></i> HOBI & MINAT</h4>
+                            <div class="hobby-chips-wrap">
+                                <span class="hobby-chip"><i class="fa-solid fa-person-running"></i> Berolahraga</span>
+                                <span class="hobby-chip"><i class="fa-solid fa-lightbulb"></i> Belajar Hal Baru</span>
+                                <span class="hobby-chip"><i class="fa-solid fa-gamepad"></i> Gaming</span>
+                            </div>
+                        </div>
+
+                        <!-- Keahlian (Skills) dengan Progress Bar (Dikelola di script.js) -->
+                        <div class="skills-block">
+                            <h4 class="block-subtitle"><i class="fa-solid fa-layer-group"></i> KEAHLIAN & TEKNOLOGI</h4>
+                            <div class="skills-list" id="skillsContainer"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: PENGALAMAN & RIWAYAT -->
+        <section class="section experience-section" id="experience">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <h2 class="section-title">PENGALAMAN & RIWAYAT</h2>
+                    <div class="section-title-bar"></div>
+                </div>
+
+                <div class="experience-grid">
+                    <!-- Kolom 1: Pendidikan & Prestasi -->
+                    <div class="experience-col">
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <div class="info-card-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <h3>RIWAYAT PENDIDIKAN</h3>
+                            </div>
+                            <div class="timeline-wrap">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2026 – Sekarang</div>
+                                    <h4 class="timeline-title">Universitas Tanjungpura</h4>
+                                    <p class="timeline-sub">S1 Sistem Informasi (NIM H1101261071)</p>
+                                    <p class="timeline-detail">Aktif menempuh perkuliahan, memperdalam web development, basis data, dan analisis sistem.</p>
+                                </div>
+
+                                <!-- CATATAN: Ubah Nama SMA/SMK Anda di bawah ini jika diperlukan -->
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2021 – 2024</div>
+                                    <h4 class="timeline-title">SMA Negeri 1 Bengkayang</h4>
+                                    <p class="timeline-sub">Jurusan MIPA / IPA</p>
+                                    <p class="timeline-detail">Lulus dengan rekam jejak akademik yang baik serta aktif dalam ekstrakurikuler sains dan olahraga.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-card" style="margin-top: 24px;">
+                            <div class="info-card-header">
+                                <div class="info-card-icon accent-gold"><i class="fa-solid fa-trophy"></i></div>
+                                <h3>PRESTASI & PENGHARGAAN</h3>
+                            </div>
+                            <ul class="achievement-list">
+                                <li>
+                                 <span class="badge-rank gold"><i class="fa-solid fa-medal"></i>
+                                    <div>
+                                        <strong>OSN Kebumian Tingkat Kabupaten</strong>
+                                        <p>Pernah mengikuti Olimpiade Sains Nasional (OSN) bidang Kebumian tingkat Kabupaten.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="badge-rank silver"><i class="fa-solid fa-award"></i> O2SN</span>
+                                    <div>
+                                        <strong>O2SN Cabang Badminton</strong>
+                                        <p>Pernah mengikuti kompetisi olahraga tingkat daerah</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="badge-rank bronze"><i class="fa-solid fa-trophy"></i> E-Sport</span>
+                                    <div>
+                                        <strong>Turnamen Mobile Legends tingkat Kabupaten</strong>
+                                        <p>Pernah berpartisipasi dalam kejuaraan esports tingkat kabupaten</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Kolom 2: Organisasi & Kepanitiaan -->
+                    <div class="experience-col">
+                        <div class="info-card">
+                            <div class="info-card-header">
+                                <div class="info-card-icon"><i class="fa-solid fa-users"></i></div>
+                                <h3>PENGALAMAN ORGANISASI</h3>
+                            </div>
+                            <div class="timeline-wrap">
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2026 – Sekarang</div>
+                                    <h4 class="timeline-title">Belum Ada</h4>
+                                    <p class="timeline-detail">Fokus pada adaptasi perkuliahan semester awal di Universitas Tanjungpura dan persiapan organisasi kampus.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2025 – 2026</div>
+                                    <h4 class="timeline-title">Rohis (Kerohanian Islam)</h4>
+                                    <p class="timeline-detail">Berpartisipasi aktif dalam kegiatan sosial, pembinaan karakter, dan kegiatan keagamaan.</p>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-dot"></div>
+                                    <div class="timeline-date">2024 – 2025</div>
+                                    <h4 class="timeline-title">Organisasi Futsal</h4>
+                                    <p class="timeline-detail">Mengasah kerjasama tim, sportivitas, kepemimpinan, dan manajemen pertandingan.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Kepanitiaan (Tampil Elegan) -->
+                        <div class="info-card" style="margin-top: 24px;">
+                            <div class="info-card-header">
+                                <div class="info-card-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                                <h3>PENGALAMAN KEPANITIAAN</h3>
+                            </div>
+                            <div class="empty-state-card">
+                                <div class="empty-state-icon"><i class="fa-solid fa-clipboard-check"></i></div>
+                                <h4>Belum Ada Kepanitiaan Formal</h4>
+                                <p>Saat ini masih terbuka dan siap berkontribusi secara aktif dalam berbagai kepanitiaan akademik maupun festival kampus mendatang.</p>
+                                <span class="ready-badge"><i class="fa-solid fa-bolt"></i> Siap Berkolaborasi</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: RECAP PROJECT 2026 -->
+        <section class="section project-section" id="projects">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <h2 class="section-title">RECAP PROJECT 2026</h2>
+                    <div class="section-title-bar"></div>
+                    <p class="section-subtitle">
+                        Dokumentasi karya dan latihan pemrograman yang telah dikembangkan di Visual Studio Code.
+                    </p>
+                </div>
+
+                <!-- Grid Kartu Project Dimuat Otomatis oleh script.js -->
+                <div class="projects-grid" id="projectsContainer"></div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: CONTACT ME (THANK YOU 2026) -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-title-wrap">
+                    <h2 class="section-title">CONTACT ME</h2>
+                    <div class="section-title-bar"></div>
+                </div>
+
+                <div class="contact-card-box">
+                    <div class="contact-header-wrap">
+                        <div class="contact-avatar-wrap">
+                            <div class="contact-avatar-glow"></div>
+                            <!-- CATATAN: Ganti foto profil di: assets/img/profile.jpg -->
+                            <img src="foto3.jpeg" alt="Diky Firerza" class="contact-avatar-img">
+                        </div>
+
+                        <div class="contact-hero-text">
+                            <h3 class="thank-you-title">THANK YOU <span class="text-glow-cyan">2026</span></h3>
+                            <p class="thank-you-sub">
+                                Terima kasih telah mengunjungi portofolio saya. Terbuka untuk diskusi, kerja sama, dan pembelajaran teknologi baru!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Ikon Sosial Media Bulat Sesuai Referensi -->
+                    <div class="social-links-grid">
+                        <a href="https://wa.me/6283152472776" target="_blank" rel="noopener noreferrer" class="social-circle-btn whatsapp" aria-label="WhatsApp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span class="social-tooltip">WhatsApp: 083152472776</span>
+                        </a>
+
+                        <a href="https://instagram.com/kyyfrzaa" target="_blank" rel="noopener noreferrer" class="social-circle-btn instagram" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                            <span class="social-tooltip">Instagram: @kyyfrzaa</span>
+                        </a>
+
+                        <a href="https://github.com/dikyfirerza-byte" target="_blank" rel="noopener noreferrer" class="social-circle-btn github" aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                            <span class="social-tooltip">GitHub: dikyfirerza-byte</span>
+                        </a>
+
+                        <a href="https://open.spotify.com/user/juskidii" target="_blank" rel="noopener noreferrer" class="social-circle-btn spotify" aria-label="Spotify">
+                            <i class="fa-brands fa-spotify"></i>
+                            <span class="social-tooltip">Spotify: juskidii</span>
+                        </a>
+
+                        <a href="mailto:dikyfirerza@gmail.com" class="social-circle-btn email" aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span class="social-tooltip">Email: dikyfirerza@gmail.com</span>
+                        </a>
+                    </div>
+
+                    <!-- Info Kontak Langsung -->
+                    <div class="direct-contact-bar">
+                        <div class="direct-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <span>0831-5247-2776</span>
+                        </div>
+                        <div class="direct-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>dikyfirerza@gmail.com</span>
+                        </div>
+                        <div class="direct-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Pontianak, Kalimantan Barat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 <strong>Diky Firerza</strong> – Sistem Informasi, Universitas Tanjungpura</p>
+            <p class="footer-sub">Dibuat dengan HTML5, CSS3, dan Vanilla JavaScript murni.</p>
+        </div>
+    </footer>
+
+    <!-- File JavaScript Utama -->
+    <script src="script.js"></script>
+</body>
+</html>
